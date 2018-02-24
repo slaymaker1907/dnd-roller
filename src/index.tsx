@@ -29,7 +29,7 @@ interface RollConfigProps extends RollDescription {
 }
 
 function NumberField(props: { hint: string, value?: number, onChange: (ele: any) => void }) {
-    return <TextField onChange={props.onChange} type="number" helperText={props.hint} value={props.value} />;
+    return <TextField style={{flex: "1 1 0"}} onChange={props.onChange} type="number" helperText={props.hint} value={props.value} />;
 }
 
 let RollConfig: any = (props: RollConfigProps) => {
@@ -68,7 +68,7 @@ let RollConfig: any = (props: RollConfigProps) => {
     return (
         // <div style={{display: 'flex', flexDirection: 'row'}}>
         <div>
-            <FormGroup row>
+            <FormGroup row style={{display: "flex"}}>
                 <Button color="primary" variant="raised" onClick={props.rollDice}>Roll</Button>
                 <NumberField hint="Dice count" value={props.diceCount} onChange={changeHelper("diceCount")} />
                 <NumberField hint="Dice type" value={props.diceType} onChange={changeHelper("diceType")} />
