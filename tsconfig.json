@@ -1,0 +1,10 @@
+{
+	"extends": "./baseconfig.json",
+	"compilerOptions": {
+		"outFile": "build/index.js"
+	},
+	"include": [
+		"src/*.ts",
+		"src/*.tsx"
+	]
+}

@@ -1,0 +1,10 @@
+{
+    "extends": "./baseconfig.json",
+    "compilerOptions": {
+        "module": "commonjs",
+        "outDir": "build/test"
+    },
+    "include": [
+        "test/*.ts"
+    ]
+}
